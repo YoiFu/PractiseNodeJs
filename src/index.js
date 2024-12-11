@@ -25,4 +25,13 @@ app.get('/news', (req, res, next) => {
     res.render('news');
 });
 
+app.get('/search', (req, res, next) => {
+    console.log(req.query.q);
+    res.render('search');
+});
+
+app.post('/search', (req, res, next) => {
+    res.render('search');
+});
+
 app.listen(port, () => console.log('Example listening at http://localhost:${port}'));
