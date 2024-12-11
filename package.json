@@ -4,6 +4,7 @@
   "main": "src/index.js",
   "scripts": {
     "start": "nodemon --inspect src/index.js",
+    "gencss": "sass --watch src/resources/scss/app.scss src/public/css/app.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,11 +23,13 @@
   "homepage": "https://github.com/YoiFu/PractiseNodeJs#readme",
   "description": "",
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "express": "^4.21.2",
     "express-handlebars": "^8.0.1"
   },
   "devDependencies": {
     "morgan": "^1.10.0",
-    "nodemon": "^3.1.7"
+    "nodemon": "^3.1.7",
+    "sass": "^1.82.0"
   }
 }

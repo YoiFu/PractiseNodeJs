@@ -9,6 +9,7 @@ const hbs = exprHandleBars.create({
     extname: ".hbs"
 });
 
+app.use(express.static(path.join(__dirname, "public")));
 app.use(morgan('combined'));
 
 // Template engine
