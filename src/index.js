@@ -4,6 +4,9 @@ const exprHandleBars = require('express-handlebars')
 const path = require('path')
 const app = express()
 const port = 3000
+const db = require('./config/db')
+
+db.connect();
 
 const route = require('./routes')
 

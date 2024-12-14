@@ -1,7 +1,16 @@
+var StudentObject = require('../models/Student');
+
 class HomeController {
 
-    index(req, res) {
-        res.render("home");
+    async index(req, res) {
+        // res.render("home");
+        try {
+            var result = await StudentObject.find({});
+            console.log(rtesult);
+        } catch (error) {
+            console.error(error);
+        }
+        // res.send({name: "nguyen Hoang vu"});
     }
 }
 
