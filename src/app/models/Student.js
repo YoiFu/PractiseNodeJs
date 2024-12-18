@@ -7,4 +7,4 @@ const Student = new Schema({
     major: String,
 });
 
-module.exports = mongoose.model("Student", Student);
+module.exports = mongoose.model("Student", Student, "Student");

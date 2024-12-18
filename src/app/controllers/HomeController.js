@@ -5,7 +5,7 @@ class HomeController {
     async index(req, res) {
         // res.render("home");
         try {
-            var result = await StudentObject.find({});
+            var result = await StudentObject.find();
             res.json(result);
         } catch (error) {
             console.error(error);
