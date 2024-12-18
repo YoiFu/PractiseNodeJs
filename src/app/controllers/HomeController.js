@@ -6,11 +6,10 @@ class HomeController {
         // res.render("home");
         try {
             var result = await StudentObject.find({});
-            console.log(rtesult);
+            res.json(result);
         } catch (error) {
             console.error(error);
         }
-        // res.send({name: "nguyen Hoang vu"});
     }
 }
 
