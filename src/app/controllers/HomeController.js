@@ -3,10 +3,9 @@ var StudentObject = require('../models/Student');
 class HomeController {
 
     async index(req, res) {
-        // res.render("home");
         try {
-            var result = await StudentObject.find();
-            res.json(result);
+            var result = await StudentObject.find().lean();
+            res.render("home", { result });
         } catch (error) {
             console.error(error);
         }

@@ -1,12 +1,14 @@
-<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-  <h4 id="scrollspyHeading1">First heading</h4>
-  <p>...</p>
-  <h4 id="scrollspyHeading2">Second heading</h4>
-  <p>...</p>
-  <h4 id="scrollspyHeading3">Third heading</h4>
-  <p>...</p>
-  <h4 id="scrollspyHeading4">Fourth heading</h4>
-  <p>...</p>
-  <h4 id="scrollspyHeading5">Fifth heading</h4>
-  <p>...</p>
+<div class="studentView">
+  <div class="row">
+      {{#each result}}
+        <div class="card" style="width: 20rem;">
+          <div class="card-body">
+            <h5 class="card-title">{{this.name}}</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">"Age: "{{this.age}}</h6>
+            <p class="card-text">"Major: "{{this.major}}</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+          </div>
+        </div>
+      {{/each}}
+  </div>
 </div>
